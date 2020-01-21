@@ -25,6 +25,7 @@ export default class MultipleChoice extends Component {
   onSubmit = (e) => {
     e.preventDefault();
     this.props.onSubmit(e.target.elements['multipleChoiceQues'].value);
+    e.target.reset();
   };
 
   render() {
