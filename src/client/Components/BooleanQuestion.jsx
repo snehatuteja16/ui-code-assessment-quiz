@@ -6,6 +6,7 @@ export default class BooleanQuestion extends Component {
   onSubmit = (e) => {
     e.preventDefault();
     this.props.onSubmit(e.target.elements['boolQuestion'].value);
+    e.target.reset();
   };
 
   render() {

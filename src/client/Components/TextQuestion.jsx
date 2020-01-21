@@ -18,6 +18,9 @@ export default class TextQuestion extends Component {
   onSubmit = (e) => {
     e.preventDefault();
     this.props.onSubmit(this.state.inputVal);
+    this.setState({
+      inputVal: ''
+    })
   };
 
   render() {
